@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Inspiro B | Responsive HTML5 Template</title>
+<!-- CSS FILES -->
+<!--Template file default template.css-->
+<link rel="stylesheet" href="css/template.css" type="text/css">
+<!--Color file default none.css-->
+<link rel="stylesheet" href="css/none.css" type="text/css">
+<link rel="stylesheet" href="css/menus.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+<!-- RTL - Right to left languages OFF (default) if you use css/style-rtl.css your site will be in RTL Mode   -->
+<link rel="stylesheet" href="css/style-rtl-off.css" type="text/css">
+
+<!-- JS FILES -->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/responsive.js"></script>
+<script type="text/javascript" src="js/uniform.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+<!-- Slideshow background param -->
+<script type="text/javascript">
+var slideshowSpeed = 5000;
+var slideEffect = "fade";
+jQuery(document).ready(function($) {$('headerimgs').bgimgSlideshow({photos : [{ 
+			"firstline" : "Modern Premium Theme",
+			"secondline" : "Responsive theme with amazing experience by using on desktops, tablets, phones or any other device!",	
+			"url" :  "",
+			"image" : "images/slide/1.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},{ 
+			"firstline" : "HTML5 &amp; CSS3",
+			"secondline" : "This is the future of the web! HTML5 &amp; CSS3. Fast website with great functionality",	
+			"url" :  "",
+			"image" : "images/slide/2.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},{ 
+			"firstline" : "Multi-Purpose Business Theme",
+			"secondline" : "Inspiro B is loaded with features, and it&#039;s easy to customize and maintain with advanced theme settings",	
+			"url" :  "",
+			"image" : "images/slide/3.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},]});});
+		
+
+</script>
+<script src="js/jquery.vticker.min.js"></script>
+<script>
+  $(function() {
+    $('#vTicker').vTicker();
+  });
+</script>
+</head>
+
+<body class="one-sidebar sidebar-first page-blog">
+
+<!-- Background slideshow-->
+<div id="headerimgs">
+  <div id="headerimg1" style="z-index:-1" class="headerimg"></div>
+  <div id="headerimg2" style="z-index:1" class="headerimg"></div>
+</div>
+<!-- end .Slideshow --> 
+
+<!-- Slideshow controls -->
+<div class="fade">
+  <div id="control" class="btn"></div>
+</div>
+<div id="back" class="btn-back"></div>
+<div id="next" class="btn-next"></div>
+<div id="fullscreen" class="btnf"></div>
+<!-- end .Slideshow controls -->
+
+<div id="wrap" class="clearfix">
+  <div id="header-wrap">
+    <div id="pre-header" class="clearfix">
+      <div id="logo" class="logo"> 
+        
+        <!-- logo & slogan --> 
+        <a href="#" title="Home"><img src="images/logo.png" alt="Home" /></a> 
+        <!-- end. logo & slogan --> 
+        
+      </div>
+      <div class="features_top_div"> 
+        <!-- features top -->
+        <div class="social_icons">
+          <ul>
+            <li><a href="http://www.facebook.com/facebook" target="_blank" rel="me"><img src="images/facebook.png" alt="Facebook"/></a></li>
+            <li><a href="http://www.twitter.com/twitter" target="_blank" rel="me"><img src="images/twitter.png" alt="Twitter"/></a></li>
+            <li><a href="https://plus.google.com/googleplus" target="_blank" rel="me"><img src="images/googleplus.png" alt="Twitter"/></a></li>
+          </ul>
+        </div>
+        <!-- end .features top -->
+        
+         
+        <div class="region region-header-features">
+          
+          <!-- /.block -->
+          <div id="block-search-form" class="block block-search">
+            <div class="content">
+              <form onSubmit="if(this.search_block_form.value==&#039;Search&#039;){ alert(&#039;Please enter a search&#039;); return false; }" action="#" method="post" id="search-block-form" accept-charset="UTF-8">
+                <div>
+                  <div class="container-inline">
+                    <div class="form-item form-type-textfield form-item-search-block-form">
+                      <input title="Enter the terms you wish to search for." onBlur="if (this.value == &#039;&#039;) {this.value = &#039;Search&#039;;}" onFocus="if (this.value == &#039;Search&#039;) {this.value = &#039;&#039;;}" placeholder="Kërko" type="text" id="edit-search-block-form--2" name="search_block_form" value="Kërko" size="16" maxlength="128" class="form-text" />
+                      <input alt="Search" type="image" id="edit-submit" name="submit" src="images/search-button.png" class="form-submit" />
+                    </div>
+                    <input type="hidden" name="form_id" value="search_block_form" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.block --> 
+        </div>
+        <!-- /.region --> 
+      </div>
+    </div>
+    <div class="top_line_tb"></div>
+    <header id="header" class="clearfix">
+      <nav id="navigation" role="navigation">
+        <div id="main-menu">
+          <ul class="menu">
+            <li class="first leaf"><a href="index.html" title="Home">Home</a></li>
+            <li class="leaf"><a href="#"  >Rreth Prizrenit</a>
+			<ul class="menu">
+			  
+              <li class="last expanded"><a title="" href="about-us.html">Historia</a> 
+                <li class="last expanded"><a title="" href="about-us-1.html">Gjeografia</a>
+				 <li class="first last leaf"><a title="" href="about-us-2.html">Popullata</a></li>
+              </ul></li>
+            <li class="leaf"><a href="#" title="Portfolio"class="active">Kulturë</a>
+			<ul class="menu">
+			  
+             
+				 <li class="first last leaf"><a title="" href="portfolio.html">Veshje Tradicionale</a></li>
+				 <li class="first last leaf"><a title="" href="news.html">Artizanate</a></li>
+              </ul></li>
+            
+                        <li class="leaf"><a  href="#">Monumentet</a>
+				<ul class="menu">
+			  
+              <li class="last expanded"><a title="" href="blog.html">Muzetë dhe Monumentet</a> </li>
+                <li class="last expanded"><a title="" href="blog_1.html">Xhamitë</a></li>
+				 <li class="first last leaf"><a title="" href="blog_2.html">Kishat</a></li>
+                    <li class="first last leaf"><a title="" href="blog_3.html">Teqet</a></li>
+                    <li class="first last leaf"><a title="" href="news_1.html">Urat</a></li>
+					<li class="first last leaf"><a title="" href="news_2.html">Tyrbet</a></li>
+					<li class="last expanded"><a title="" href="news_3.html">Të tjera</a> </li>
+              </ul>
+            
+            <li class="leaf"><a href="galeria.html" title="News &amp; Events">Galeria</a></li>
+            <li class="last leaf"><a href="Login.html" title="Contact">Login Form</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="header-right">
+        <div id="block-views-latest-news-block">
+          <div class="content">
+            <div class="view view-latest-news view-id-latest_news view-display-id-block">
+              <div class="view-content"> 
+                
+                <!-- start scroll -->
+                <div id="vTicker" class='view view-latest_news'>
+                  <ul id='views-ticker-vTicker-list-latest_news'>
+                    <li> <span class='views-vTicker-tick-field'> <a href="news_detail.html">Duis Interdico Te</a> <span class="latest-news-body">Duis in jus letalis pagus patria verto. Duis eligo facilisis ideo nostrud paratus ulciscor.</span> Sunday, Dhjetor 13, 2021 - 09:38</span> </li>
+                    <li> <span class='views-vTicker-tick-field'> <a href="news_detail.html">Duis Interdico Te</a> <span class="latest-news-body">Duis in jus letalis pagus patria verto. Duis eligo facilisis ideo nostrud paratus ulciscor.</span> Sunday, Dhjetor 13, 2021 - 09:38</span> </li>
+                  </ul>
+                </div>
+                <!-- end scroll --> 
+                
+              </div>
+            </div>
+          </div>
+          <!-- /.block --> 
+        </div>
+        <!-- /.region --> 
+      </div>
+    </header>
+  </div>
+  <div class="split_line"></div>
+  <div id="primary" class="container sidebar-bg clearfix">
+    <section id="content" role="main" class="clearfix">
+      <div id="content-wrap">
+        <h1 class="page-title"style="width: 925px;">Artizanatet në Prizren</h1>
+        <div class="region region-content">
+          <div id="block-system-main" class="block block-system">
+            <div class="content">
+              <div class="view view-News view-id-News view-display-id-page view-dom-id-b0ff96e3542cdc6696bbb0948728e5ac">
+                <div class="view-content"style="width:925px;">
+                  <div class="views-row views-row-1 views-row-odd views-row-first">
+                    <article id="node-17" class="node node-news-content node-promoted node-teaser clearfix">
+                      <header>
+                        <h2 class="title" ><a href="#">Argjendarët</a></h2>
+                      </header>
+                      <div class="content">
+                        <div class="field field-name-field-news-picture field-type-image field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even"><a href="#"><img src="files/styles/news_picture/public/argjendari.jpg" style="width:400px;" alt="" /></a></div>
+                          </div>
+                        </div>
+                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even">
+							<p><strong>Argjendarët</strong> janë ndër mjeshtrit më të njohur të Prizrenit, për esnafët e të cilëve kanë shkruar edhe historianët. 
+							Duke krijuar stoli e objekte arti prej arit, argjendit e metaleve tjera, të kombinuara me gurë, ata kanë kontribuar në përhapjen e emrit të Prizrenit në tërë botën. 
+							<br /><br />
+						    Argjendarët e kësaj zone me teknikën e derdhjes kanë punuar kuti të duhanit, çibukë, cigarellëqe, pjesë të qystekut, unaza, byzylykë, vathë, pjesë të gjerdanëve, tabakë të mëdhenj, gota uji e vere, filxhana, etj. 
+							<br />
+							Ndërkohë me teknikën e filigranit, që është karakteristikë e argjendarëve prizrenas, pos që janë zbukuruar objektet e punuara me derdhje janë krijuar edhe vepra të shumta origjinale nga fijet e holla të metaleve të çmuara. Argjendarët dikur në Prizren kanë pas edhe këndin e vet, që është njohur si Çarshia e Kujunxhillëkut. 
+							<br /><br />
+							Ndërkohë tani dyqanet e tyre janë të shpërndara. Gjeneratat e reja vazhdojnë ta ushtrojnë këtë zanat, me trajta të reja, sipas diktatit të kohës.</p>  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer>
+                        <ul class="links inline">
+                          <li class="node-readmore first last"><a href="#" rel="tag" title="Duis Interdico Te">Read more<span class="element-invisible"> about Duis Interdico Te</span></a></li>
+                        </ul>
+                      </footer>
+                    </article>
+                    <!-- /.node --> 
+                  </div>
+                  <div class="views-row views-row-2 views-row-even">
+                    <article id="node-21" class="node node-news-content node-teaser clearfix">
+                      <header>
+                        <h2 class="title" ><a href="#">Farkatarët</a></h2>
+                      </header>
+                      <div class="content">
+                        <div class="field field-name-field-news-picture field-type-image field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even"><a href="#"><img src="files/styles/news_picture/public/farkatari.jpg" style="width:400px;" alt="" /></a></div>
+                          </div>
+                        </div>
+                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even">
+							<p><strong>Farkatarët</strong> janë mjeshtër të vjetër të qytetit që me teknikën e rrahjes dhe derdhjes së metaleve kanë prodhuar vegla të ndryshme bujqësore dhe aso për përdorim në jetën e përditshme.
+							<br /><br />
+							Për shkak të vlerave dhe kërkesave të vazhdueshme farkëtarët i kanë pasur çarshitë e tyre në pjesë të ndryshme të qytetit, si në Terzimahallë, Bazhdaranë, Tabakhanë, etj. 
+							<br /><br />
+							Karakteristikë e kësaj zeje është se në të përfshihen meshkujt e shtëpisë, që nga mosha e fëmijërisë, duke trashëguar punën serioze të prindërve. </div>
+                          </p></div>
+                        </div>
+                      </div>
+                      <footer>
+                        <ul class="links inline">
+                          <li class="node-readmore first last"><a href="#" rel="tag" title="Caecus Exputo Iustum Quis">Read more<span class="element-invisible"> about Caecus Exputo Iustum Quis</span></a></li>
+                        </ul>
+                      </footer>
+                    </article>
+                    <!-- /.node --> 
+                  </div>
+                  <div class="views-row views-row-9 views-row-odd views-row-last">
+                    <article id="node-13" class="node node-news-content node-teaser clearfix">
+                      <header>
+                        <h2 class="title" ><a href="#">Zdrukthëtarët</a></h2>
+                      </header>
+                      <div class="content">
+                        <div class="field field-name-field-news-picture field-type-image field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even"><a href="#"><img src="files/styles/news_picture/public/zdrukthtari.jpg" style="width:400px;" alt="" /></a></div>
+                          </div>
+                        </div>
+                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even">
+							<p><strong>Zdrukthtarët</strong> me vegla dore gdhendin objekte për nevojat e përditshme, që përdoren në brendi të shtëpive e jashtë tyre. 
+							<br /><br />
+							Veprat e tyre janë dalluar edhe në aspektin e krijimtarisë artistike, ku janë krijuar arka nusërie, arka për monedha, tavolina dekoruese, tavanë, dyer, dritare, parmakë, etj. 
+							<br /><br />
+							Kjo krijimtari ka qenë nën ndikimin e shkollës dibrane të drugdhendjes, ku më së shumti shprehej preciziteti i mjeshtërve në krijimin e dekorimeve nga druri. 
+							Në kohën kur në Prizren prodhoheshin armë, zdrukthëtarët prizrenas punuan kondakë pushkësh dhe pistoletash. Po ashtu edhe arkat kanë qenë prodhime specifike të mjeshtërve prizrenas. 
+							<br /><br />
+							Krijimtaria në këtë zeje viteve të fundit i është përshtatur rrethanave teknologjike ku prodhimi bëhet me makina e kompjuterë, duke vazhduar traditën e trashëguar të drugdhendjes. </div>
+                          </p></div>
+                        </div>
+                      </div>
+                      <footer>
+                        <ul class="links inline">
+                          <li class="node-readmore first last"><a href="#" rel="tag" title="Abigo Diam Dolor Probo">Read more<span class="element-invisible"> about Abigo Diam Dolor Probo</span></a></li>
+                        </ul>
+                      </footer>
+                    </article>
+                    <!-- /.node --> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.block --> 
+        </div>
+        <!-- /.region --> 
+      </div>
+    </section>
+  </div>
+  <footer id="footer-bottom" style="position:relative;">
+    <div id="footer-area" class="clearfix">
+      <div class="region region-footer">
+        <div id="block-block-5" class="block block-block">
+          <h2 ><span>Rreth Prizrenit</span></h2>
+          <div class="content">
+			<a href="about-us.html">Histori<br />
+			<a href="about-us-1.html">Gjeografi<br />
+			<a href="about-us-2.html">Popullsia<br /> </a>
+            <br />
+            © 2021 | Prizreni im | </div>
+        </div>
+		<div id="block-block-5" class="block block-block">
+          <h2 ><span>Çka të vizitoni?</span></h2>
+          <div class="content"> 
+		  <a href="blog.html">Monumentet<br />
+		  <a href="blog_1.html">Xhamitë<br />
+		  <a href="blog_2.html">Kishat<br />
+		  <a href="blog_3.html">Teqet<br />
+		  <a href="news_2.html">Tyrbet<br />
+            <br />
+          </div>
+        </div>
+        <!-- /.block -->
+         <div id="block-contactinfo-hcard"style="float:right;" class="block block-contactinfo">
+          <h2 ><span>Kontakti</span></h2>
+          <div class="content">
+            <div id="contactinfo" class="vcard">
+              <div class="adr">
+				<span class="street-address">Rruga"Nëna Tereza"</span> <br /> 
+				<span class="locality">Prizren</span>, <span class="region">Kosovë</span>
+			  </div>
+			 </div>
+           </div>
+      
+         </div>
+	
+  </footer>
+</div>
+</body>
+</html>
