@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Inspiro B | Responsive HTML5 Template</title>
+<!-- CSS FILES -->
+<!--Template file default template.css-->
+<link rel="stylesheet" href="css/template.css" type="text/css">
+<!--Color file default none.css-->
+<link rel="stylesheet" href="css/none.css" type="text/css">
+<link rel="stylesheet" href="css/menus.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/responsive.css" type="text/css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<!-- RTL - Right to left languages OFF (default) if you use css/style-rtl.css your site will be in RTL Mode   -->
+<link rel="stylesheet" href="css/style-rtl-off.css" type="text/css">
+
+<!-- JS FILES -->
+<script src="js/modernizr.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script defer src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/responsive.js"></script>
+<script type="text/javascript" src="js/uniform.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+<!-- Slideshow background param -->
+<script type="text/javascript">
+var slideshowSpeed = 5000;
+var slideEffect = "fade";
+jQuery(document).ready(function($) {$('headerimgs').bgimgSlideshow({photos : [{ 
+			"firstline" : "Modern Premium Theme",
+			"secondline" : "Responsive theme with amazing experience by using on desktops, tablets, phones or any other device!",	
+			"url" :  "",
+			"image" : "images/slide/1.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},{ 
+			"firstline" : "HTML5 &amp; CSS3",
+			"secondline" : "This is the future of the web! HTML5 &amp; CSS3. Fast website with great functionality",	
+			"url" :  "",
+			"image" : "images/slide/2.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},{ 
+			"firstline" : "Multi-Purpose Business Theme",
+			"secondline" : "Inspiro B is loaded with features, and it&#039;s easy to customize and maintain with advanced theme settings",	
+			"url" :  "",
+			"image" : "images/slide/3.jpg",
+			"link" : "<div class=\"pictured\">VIEW MORE<div>"
+		},]});});
+		
+
+</script>
+<script src="js/jquery.vticker.min.js"></script>
+<script>
+  $(function() {
+    $('#vTicker').vTicker();
+  });
+</script>
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-30 node-type-portfolio">
+
+<!-- Background slideshow-->
+<div id="headerimgs">
+  <div id="headerimg1" style="z-index:-1" class="headerimg"></div>
+  <div id="headerimg2" style="z-index:1" class="headerimg"></div>
+</div>
+<!-- end .Slideshow --> 
+
+<!-- Slideshow controls -->
+<div class="fade">
+  <div id="control" class="btn"></div>
+</div>
+<div id="back" class="btn-back"></div>
+<div id="next" class="btn-next"></div>
+<div id="fullscreen" class="btnf"></div>
+<!-- end .Slideshow controls -->
+
+<div id="wrap" class="clearfix">
+  <div id="header-wrap">
+    <div id="pre-header" class="clearfix">
+      <div id="logo" class="logo"> 
+        
+        <!-- logo & slogan --> 
+        <a href="#" title="Home"><img src="images/logo.png" alt="Home" /></a> 
+        <!-- end. logo & slogan --> 
+        
+      </div>
+      <div class="features_top_div"> 
+        <!-- features top -->
+        <div class="social_icons">
+          <ul>
+            <li><a href="http://www.facebook.com/facebook" target="_blank" rel="me"><img src="images/facebook.png" alt="Facebook"/></a></li>
+            <li><a href="http://www.twitter.com/twitter" target="_blank" rel="me"><img src="images/twitter.png" alt="Twitter"/></a></li>
+            <li><a href="https://plus.google.com/googleplus" target="_blank" rel="me"><img src="images/googleplus.png" alt="Twitter"/></a></li>
+          </ul>
+        </div>
+        <!-- end .features top -->
+        
+        <div class="region region-header-features">
+          <div id="block-locale-language" class="block block-locale">
+            <div class="content">
+              <ul class="language-switcher-locale-url">
+                <li class="en first active"><a href="#" class="language-link active" lang="en"><img class="language-icon" src="images/flags/en.png" width="16" height="12" alt="English" title="English" /> </a></li>
+                <li class="de"><a href="#" class="language-link" lang="de"><img class="language-icon" src="images/flags/de.png" width="16" height="12" alt="Deutsch" title="Deutsch" /> </a></li>
+                <li class="fr last"><a href="#" class="language-link" lang="fr"><img class="language-icon" src="images/flags/fr.png" width="16" height="12" alt="Français" title="Français" /> </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.block -->
+          <div id="block-search-form" class="block block-search">
+            <div class="content">
+              <form onsubmit="if(this.search_block_form.value==&#039;Search&#039;){ alert(&#039;Please enter a search&#039;); return false; }" action="#" method="post" id="search-block-form" accept-charset="UTF-8">
+                <div>
+                  <div class="container-inline">
+                    <div class="form-item form-type-textfield form-item-search-block-form">
+                      <input title="Enter the terms you wish to search for." onblur="if (this.value == &#039;&#039;) {this.value = &#039;Search&#039;;}" onfocus="if (this.value == &#039;Search&#039;) {this.value = &#039;&#039;;}" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="Search" size="16" maxlength="128" class="form-text" />
+                      <input alt="Search" type="image" id="edit-submit" name="submit" src="images/search-button.png" class="form-submit" />
+                    </div>
+                    <input type="hidden" name="form_id" value="search_block_form" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.block --> 
+        </div>
+        <!-- /.region --> 
+      </div>
+    </div>
+    <div class="top_line_tb"></div>
+    <header id="header" class="clearfix">
+      <nav id="navigation" role="navigation">
+        <div id="main-menu">
+          <ul class="menu">
+            <li class="first leaf"><a href="index.html" title="Home">Home</a></li>
+            <li class="leaf"><a href="#"  >Rreth Prizrenit</a>
+			<ul class="menu">
+			  
+              <li class="last expanded"><a title="" href="about-us.html">Historia</a> 
+                <li class="last expanded"><a title="" href="about-us-1.html">Gjeografia</a>
+				 <li class="first last leaf"><a title="" href="about-us-2.html">Popullata</a></li>
+              </ul></li>
+            <li class="leaf"><a href="#" title="Portfolio">Kulturë</a>
+			<ul class="menu">
+			  
+             
+				 <li class="first last leaf"><a title="" href="portfolio.html">Veshje Tradicionale</a></li>
+				 <li class="first last leaf"><a title="" href="news.html">Artizanate</a></li>
+              </ul></li>
+            
+                          <li class="leaf"><a  href="#"class="active">Monumentet</a>
+				<ul class="menu">
+			  
+              <li class="last expanded"><a title="" href="blog.html">Muzetë dhe Monumentet</a> </li>
+                <li class="last expanded"><a title="" href="blog_1.html">Xhamitë</a></li>
+				 <li class="first last leaf"><a title="" href="blog_2.html">Kishat</a></li>
+                    <li class="first last leaf"><a title="" href="blog_3.html">Teqet</a></li>
+                    <li class="first last leaf"><a title="" href="news_1.html">Urat</a></li>
+					<li class="first last leaf"><a title="" href="news_2.html">Tyrbet</a></li>
+					<li class="last expanded"><a title="" href="news_3.html">Të tjera</a> </li>
+              </ul>
+            
+            <li class="leaf"><a href="news.html" title="News &amp; Events">Galeria</a></li>
+            <li class="last leaf"><a href="Login.html" title="Contact">Login Form</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="header-right">
+        <div id="block-views-latest-news-block">
+          <div class="content">
+            <div class="view view-latest-news view-id-latest_news view-display-id-block">
+              <div class="view-content"> 
+                
+                <!-- start scroll -->
+                <div id="vTicker" class='view view-latest_news'>
+                  <ul id='views-ticker-vTicker-list-latest_news'>
+                    <li> <span class='views-vTicker-tick-field'> <a href="news_detail.html">Duis Interdico Te</a> <span class="latest-news-body">Duis in jus letalis pagus patria verto. Duis eligo facilisis ideo nostrud paratus ulciscor.</span> Sunday, January 13, 2021 - 09:38</span> </li>
+                    <li> <span class='views-vTicker-tick-field'> <a href="news_detail.html">Duis Interdico Te</a> <span class="latest-news-body">Duis in jus letalis pagus patria verto. Duis eligo facilisis ideo nostrud paratus ulciscor.</span> Sunday, January 13, 2021 - 09:38</span> </li>
+                  </ul>
+                </div>
+                <!-- end scroll --> 
+                
+              </div>
+            </div>
+          </div>
+          <!-- /.block --> 
+        </div>
+        <!-- /.region --> 
+      </div>
+    </header>
+  </div>
+  <div class="split_line"></div>
+  <div id="primary" class="container   clearfix">
+    <section id="content" role="main" class="clearfix">
+    <div id="content-wrap">
+      <h1 class="page-title">Teqja e Helvative</h1>
+      <div class="region region-content">
+        <div id="block-system-main" class="block block-system">
+          <div class="content">
+            <div id="portfolio-content" class="content">
+              <div class="field field-name-field-client field-type-text field-label-inline clearfix">
+                
+               
+              </div>
+              <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                <div class="field-items">
+                  <div class="field-item even">
+			 <p>Objekti i teqesë së Halvetive gjendet në lagjen “Saraçëve”, pranë xhamisë së Kukli Mehmet-beut. 
+				  Tarikati i Halvetive është themeluar në fund të shek. XVI-të nga ana e Osman-baba-së që ishte  nga Valash i Shqipërisë.<br />
+				  <br />
+				  Osman-baba është shkolluar në Greqi, pastaj erdhi në Prizren dhe u vendos në xhaminë e Kukli Mehmet-beut. Aty qëndroi një kohë, 
+				  pastaj Kukli Mehmed-beu dhuroi truallin afër xhamisë dhe kështu filloi të zhvillojë tarikatin e vet, që pastaj do të quhet Halveti.
+				  Ndërtesa e teqesë është ndërtuar në vitin 1835. Objekti është i thjeshtë, i ndërtuar prej guri dhe qerpiçi ndërsa mbulesa është prej 
+				  tjegullave tradicionale. Edhe pse kompleksi i teqesë përbëhet prej disa objekteve si: teqeja, salla e riteve (semihane), 
+				  tyrbja, objekti i banimit dhe i pritjes, ajo si objekt përbëhet prej dy pjesëve - teqeja dhe semihana. <br />
+				  <br />
+				  Objekti i semihanes është në formë të gjashtëkëndëshit dhe është objekti kryesor ku zhvillohen lutje dhe rite tjera fetare. Në anën perëndimore është pjesa e tyrbes 
+				  ku janë varrezat e prijësve të tarikatit duke filluar prej themeluesit të tarikatit të Halvetive Osman-baba dhe nëntë udhëheqësve tjerë.
+				 
+			 </p>
+				  </div>
+                </div>
+              </div>
+            </div>
+            <footer> </footer>
+          </div>
+        </div>
+        <!-- /.block -->
+                <div id="block-views-portfolio-client-images-block" class="block block-views">
+		
+          <div id="slider" class="flexslider"style="margin-bottom: 0px; width: 475px; height: 305px; top: -24px;">
+            <iframe style="width:475px; height:305px;" frameBorder='0' src='https://a.tiles.mapbox.com/v3/tixhaj.gh37jcld/mm/zoompan,zoomwheel.html?secure=1#14/42.2122/20.7425'></iframe>
+          </div>
+		 	
+		  
+		  </div>
+      </div>
+    </div>
+    <!-- /.block --> 
+    
+  </div>
+  <footer id="footer-bottom" style="position:relative;">
+    <div id="footer-area" class="clearfix">
+      <div class="region region-footer">
+        <div id="block-block-5" class="block block-block">
+          <h2 ><span>Rreth Prizrenit</span></h2>
+          <div class="content">
+			<a href="about-us.html">Histori<br />
+			<a href="about-us-1.html">Gjeografi<br />
+			<a href="about-us-2.html">Popullsia<br /> </a>
+            <br />
+            © 2021 | Prizreni im | </div>
+        </div>
+		<div id="block-block-5" class="block block-block">
+          <h2 ><span>Çka të vizitoni?</span></h2>
+          <div class="content"> 
+		  <a href="blog.html">Monumentet<br />
+		  <a href="blog_1.html">Xhamitë<br />
+		  <a href="blog_2.html">Kishat<br />
+		  <a href="blog_3.html">Teqet<br />
+		  <a href="news_2.html">Tyrbet<br />
+            <br />
+          </div>
+        </div>
+        <!-- /.block -->
+         <div id="block-contactinfo-hcard"style="float:right;" class="block block-contactinfo">
+          <h2 ><span>Kontakti</span></h2>
+          <div class="content">
+            <div id="contactinfo" class="vcard">
+              <div class="adr">
+				<span class="street-address">Rruga"Nëna Tereza"</span> <br /> 
+				<span class="locality">Prizren</span>, <span class="region">Kosovë</span>
+			  </div>
+			 </div>
+           </div>
+      
+         </div>
+  </footer>
+</div>
+<script>
+$(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+</script>
+</body>
+</html>
