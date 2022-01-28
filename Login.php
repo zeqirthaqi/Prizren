@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SEESION['username'])){
+	header("location:Home.php");
+}else{
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,18 +23,18 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Login Form</span></div>
-        <form action="#">
+        <form action="Login.php" method="POST">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Email or Phone" required>
+            <input type="text" name="username" placeholder="Email or Phone" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
+            <input type="password" name="password" placeholder="Password" required>
           </div>
           <div class="pass"><a href="#">Forgot password?</a></div>
           <div class="row button">
-            <input type="submit" value="Login">
+            <input type="submit" value="Log In" name="loginButton">
           </div>
           <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
         </form>
@@ -38,3 +45,29 @@
 
   </body>
 </html>
+<?php
+
+$username='';
+$password='';
+
+if(isset($_POST['loginButton'])){
+  if(empty($_POST['username']) || empty($_POST['password'])){
+    echo "All fields are required!";
+  }else{
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+  
+    if($username == 'Zeqir' && $password == 'Thaqi'){
+      session_start();
+      $_SESSION['username']=$username;
+      $_SESSION['password']=$password;
+  
+      header('location:Index.php');
+  }else{
+  
+    echo 'This User Does Not Exist!';
+  
+  }
+  }
+  }
+?>
